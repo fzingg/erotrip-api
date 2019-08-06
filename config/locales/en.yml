@@ -1,0 +1,76 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  errors:
+    format: "%{message}"
+    messages:
+      accepted: musi zostać zaakceptowane
+      blank: nie może być puste
+      confirmation: nie zgadza się z polem %{attribute}
+      empty: nie może być puste
+      equal_to: musi być równe %{count}
+      even: musi być parzyste
+      exclusion: jest zarezerwowane
+      greater_than: musi być większe od %{count}
+      greater_than_or_equal_to: musi być większe lub równe %{count}
+      inclusion: nie znajduje się na liście dopuszczalnych wartości
+      invalid: jest nieprawidłowe
+      less_than: musi być mniejsze od %{count}
+      less_than_or_equal_to: musi być mniejsze lub równe %{count}
+      not_a_number: nie jest liczbą
+      not_an_integer: musi być liczbą całkowitą
+      odd: musi być nieparzyste
+      present: musi być puste
+      taken: zostało już zajęte
+      too_long:
+        few: jest za długie (maksymalnie %{count} znaki)
+        many: jest za długie (maksymalnie %{count} znaków)
+        one: jest za długie (maksymalnie jeden znak)
+        other: jest za długie (maksymalnie %{count} znaków)
+      too_short:
+        few: jest za krótkie (przynajmniej %{count} znaki)
+        many: jest za krótkie (przynajmniej %{count} znaków)
+        one: jest za krótkie (przynajmniej jeden znak)
+        other: jest za krótkie (przynajmniej %{count} znaków)
+      wrong_length:
+        few: ma nieprawidłową długość (powinna wynosić %{count} znaki)
+        many: ma nieprawidłową długość (powinna wynosić %{count} znaków)
+        one: ma nieprawidłową długość (powinna wynosić jeden znak)
+        other: ma nieprawidłową długość (powinna wynosić %{count} znaków)
+      other_than: musi być inna niż %{count}
+    template:
+      body: 'Błędy dotyczą następujących pól:'
+      header:
+        few: "%{model} nie został zachowany z powodu %{count} błędów"
+        many: "%{model} nie został zachowany z powodu %{count} błędów"
+        one: "%{model} nie został zachowany z powodu jednego błędu"
+        other: "%{model} nie został zachowany z powodu %{count} błędów"

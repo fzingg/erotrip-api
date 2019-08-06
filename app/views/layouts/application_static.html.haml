@@ -1,0 +1,110 @@
+
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %title EroTrip
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    -# = javascript_pack_tag 'application'
+    -# = javascript_pack_tag 'hello_react'
+    -# = stylesheet_pack_tag 'application'
+    = favicon_link_tag
+  %body
+    -# = react_component Notifications
+    .navbar.d-md-none
+      %button.btn.btn-outline-primary.btn-outline-gray.icon-only.with-label.more(type="button")
+        %i.ero-menu
+        .button-label.empty
+      = image_tag('logo.png')
+      %button.btn.btn-outline-primary.btn-outline-gray.icon-only.with-label.messages(type="button")
+        %i.ero-messages
+        .button-label 2
+
+    .sidebar.open
+      .logo-wrapper.d-none.d-xl-block
+        = link_to image_tag('logo.png')
+
+      = react_component "LoggedUser"
+
+      .menu
+        %button.btn.btn-secondary.btn-block
+          Dodaj przejazd
+
+        %ul.main-submenu
+          %li.menu-item
+            %a
+              .icon-wrapper
+                %i.ero-users
+              .label.fadeable Użytkownicy
+          %li.menu-item
+            %a
+              .icon-wrapper
+                %i.ero-trips
+              .label.fadeable Przejazdy
+          %li.menu-item.active
+            %a
+              .icon-wrapper
+                %i.ero-groups
+              .label.fadeable Grupy
+          %li.menu-item
+            %a
+              .icon-wrapper
+                %i.ero-hotline
+              .label.fadeable Hotline
+
+        %button.btn.btn-primary.btn-block
+          Moje przejazdy
+
+        %ul.fadeable.secondary-submenu
+          %li.menu-item
+            %a
+              .icon-wrapper
+                %i.ero-messages
+              .label Wiadmości
+          %li.menu-item
+            %a
+              .icon-wrapper
+                %i.ero-notifications
+              .label Powiadomienia
+          %li.menu-item
+            %a
+              .icon-wrapper
+                %i.ero-heart-2
+              .label Chcą Cię poznać
+          %li.menu-item
+            %a
+              .icon-wrapper
+                %i.ero-eye
+              .label Podglądacz
+          %li.menu-item
+            %a
+              .icon-wrapper
+                %i.ero-new-people
+              .label Nowe osoby
+          %li.menu-item
+            %a
+              .icon-wrapper
+                %i.ero-new-trips
+              .label Nowe przejazdy
+          %li.menu-item
+            %a
+              .icon-wrapper
+                %i.ero-unlocked
+              .label Odblokowania
+          %li.menu-item
+            %a
+              .icon-wrapper
+                %i.ero-locker
+              .label Tryb anonimowy
+
+    .container.main-container
+      = yield
+
+= react_component 'ModalsContainer'
+-# = react_component 'ToastContainer', {position: 'bottom-center', autoClose: 4000}
+-# = react_component 'LoginModal'
+-# = react_component 'RegistrationModal'

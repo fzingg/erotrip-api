@@ -1,0 +1,164 @@
+.row
+	.col-12.col-lg-9.ml-lg-auto
+		.featured.streach-me
+			.patch
+			.img-wrapper
+				= link_to image_tag 'girl.jpg'
+			.img-wrapper
+				= link_to image_tag 'girl.jpg'
+			.img-wrapper
+				= link_to image_tag 'girl.jpg'
+			.img-wrapper
+				= link_to image_tag 'girl.jpg'
+			.img-wrapper
+				= link_to image_tag 'girl.jpg'
+			.img-wrapper
+				= link_to image_tag 'girl.jpg'
+			.img-wrapper
+				= link_to image_tag 'girl.jpg'
+
+		.basic-container.streach-me
+			.patch
+			.details-wrapper
+
+				.ea-flex.ea-align-center
+					%div
+					= link_to image_tag 'girl.jpg'
+					.text
+						.profile-info-wrapper
+							.profile-info
+								.profile-info-upper
+									.person-status.away
+									%h4.mb-0
+										%span Anna,
+										%span.text-gray 18
+									%i.ero-verified-border-gray.ml-2.f-s-30
+										%span.path1
+										%span.path2
+										%span.path3
+								.profile-info-lower.mb-3
+									%span.text-gray 2 dni temu,
+									%span.text-gray Poznań
+
+						%p.text-book.text-gray Hydroderm is the highly desired anti-aging cream on the block. This serum restricts the occurrence of early aging sings on the skin and keep
+
+				%button.btn.icon-only.btn-container.text-white.primary-border.secondary-bg.btn-top(type="button")
+					%i.ero-messages.f-s-18
+
+				.btn-special-wrapper
+					.label.text-primary 5/100
+					%button.btn.icon-only.btn-container.text-primary.primary-border.white-bg(type="button")
+						%i.ero-chevron-double-right-2.f-s-15
+					%button.btn.icon-only.btn-container.text-primary.primary-border.white-bg(type="button")
+						%i.ero-chevron-double-right.f-s-15
+
+		%form.search
+			.search-header
+				.info.f-s-16
+					%span.text-primary 2310
+					%span.text-gray użytkowników
+
+				.search-input
+					%button.btn.btn-outline-primary.btn-outline-gray.icon-only.with-label.more.mr-3(type="submit")
+						%i.ero-search
+
+		- [1, 2, 3, 4, 5].each do |photo|
+			.basic-container.basic-container-gray
+				.details-wrapper
+
+					.ea-flex.ea-align-center
+						%div
+						= link_to image_tag 'girl.jpg'
+						.text
+							.profile-info-wrapper
+								.profile-info
+									.profile-info-upper
+										.person-status.away
+										%h4.mb-0
+											%span Anna,
+											%span.text-gray 18
+										%i.ero-verified-border-gray.ml-2.f-s-30
+											%span.path1
+											%span.path2
+											%span.path3
+									.profile-info-lower.mb-3
+										%span.text-gray 2 dni temu,
+										%span.text-gray Poznań
+
+							%p.text-book.text-gray Hydroderm is the highly desired anti-aging cream on the block. This serum restricts the occurrence of early aging sings on the skin and keep
+
+					%button.btn.icon-only.btn-container.text-white.white-border.secondary-bg.btn-top(type="button")
+						%i.ero-messages.f-s-18
+					.btn-group-wrapper
+						%button.btn.icon-only.btn-wrapped.btn-group(type="button")
+							%i.ero-alert-circle-outline
+
+		%nav.mt-6.mb-6(aria-label="...")
+			%ul.pagination.justify-content-between
+				%li.page-item.previous.disabled
+					%a.page-link(href="#" tabindex="-1")
+						%i.ero-arrow-left.mr-3
+						%span.d-none.d-md-inline-block Poprzednia strona
+
+				.page-wrapper
+					%li.page-item.active
+						%a.page-link(href="") 1
+					%li.page-item
+						%a.page-link(href="") 2
+					%li.page-item
+						%a.page-link(href="") 3
+					%li.page-item
+						%a.page-link(href="") 4
+					%li.page-item
+						%a.page-link(href="") 5
+
+				%li.page-item.next
+					%a.page-link(href="")
+						%span.d-none.d-md-inline-block Następna strona
+						%i.ero-arrow-right.ml-3
+
+		.featured.featured-large.streach-me
+			.patch
+			.img-wrapper
+				= link_to image_tag 'girl.jpg'
+			.img-wrapper
+				= link_to image_tag 'girl.jpg'
+			.img-wrapper
+				= link_to image_tag 'girl.jpg'
+			.img-wrapper
+				= link_to image_tag 'girl.jpg'
+			.img-wrapper
+				= link_to image_tag 'girl.jpg'
+			.img-wrapper
+				= link_to image_tag 'girl.jpg'
+			.img-wrapper
+				= link_to image_tag 'girl.jpg'
+
+		.footer.streach-me.d-none.d-xl-block
+			.patch
+			.row.no-gutters
+				.col
+					.footer-stats-wrapper
+						.footer-stats
+							.name Użytkowników
+							.number 2 335 542
+				.col
+					.footer-stats-wrapper
+						.footer-stats
+							.name Zweryfikowanych
+							.number 2 115 542
+				.col
+					.footer-stats-wrapper
+						.footer-stats
+							.name Online
+							.number 15 123
+				.col
+					.footer-stats-wrapper
+						.footer-stats
+							.name Ukrytych
+							.number 75 123
+				.col
+					.footer-stats-wrapper
+						.footer-stats
+							.name Przejazdów
+							.number 92 123

@@ -1,0 +1,202 @@
+$fontSize: 0 5 10 11 12 13 15 14 16 18 20 22 25 30 35 40 45 50 55 60 65;
+@each $f in $fontSize {
+  .f-s-#{$f}{
+    font-size: #{$f}px;
+  }
+}
+
+.f-s-13-5 {
+  font-size: 13.5px;
+}
+
+.opacity-03 {
+  opacity: .3;
+}
+
+.opacity-05 {
+  opacity: .5;
+}
+
+.w-80p {
+  width: 80%;
+}
+
+.text-ellipsis {
+  @include ellipsis;
+}
+
+.vertical-middle-i {
+  vertical-align: middle !important;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.text-secondary-light {
+  color: $secondary-color-light;
+  white-space: nowrap;
+}
+
+.text-secondary-i {
+  color: $secondary-color !important;
+}
+
+.text-gray {
+  color: $ero-gray;
+}
+
+.text-gray-light {
+  color: $ero-gray-light;
+}
+
+.text-gray-semidark {
+  color: $ero-gray-semidark;
+}
+
+.text-gray-two {
+  color: #b7c5d4;
+}
+
+.text-white {
+	color: #FFF;
+}
+
+.text-regular {
+  font-family: 'GothamRoundedBook';
+}
+
+.text-bold {
+  font-family: 'GothamRoundedMedium';
+}
+
+.text-gray-dark {
+  color: $ero-gray-dark;
+}
+
+.bg-gray {
+  background: $ero-gray !important;
+}
+
+.bg-gray-light {
+  background: $ero-gray-light !important;
+}
+
+.resize-none {
+  resize: none;
+}
+
+.ml-10p {
+  margin-left: 10%;
+}
+
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 4rem !important;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.no-underline-i {
+  text-decoration: none !important;
+}
+
+.rotated-45deg {
+  @include rotate(45);
+}
+
+.img-fit {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.blurred {
+  filter: blur(5px);
+}
+
+.ea-flex {
+  display: flex;
+}
+
+.ea-flex-dir-row {
+  flex-direction: row;
+}
+
+.ea-flex-dir-column {
+  flex-direction: column;
+}
+
+.ea-just-end {
+  justify-content: flex-end;
+}
+
+.ea-just-start {
+  justify-content: flex-start;
+}
+
+.ea-just-center {
+  justify-content: center;
+}
+
+.ea-just-space-around {
+  justify-content: space-around;
+}
+
+.ea-just-space-between {
+  justify-content: space-between;
+}
+
+.ea-align-end {
+  align-items: flex-end;
+}
+
+.ea-align-start {
+  align-items: flex-start;
+}
+
+.ea-align-center {
+  align-items: center;
+}
+
+.ea-flex-0 {
+  flex: 0;
+}
+
+.ea-flex-1 {
+  flex: 1;
+}
+
+.ea-flex-1-5 {
+  flex: 2;
+}
+
+.ea-flex-2 {
+  flex: 2;
+}
+
+.ea-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}

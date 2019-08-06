@@ -1,0 +1,182 @@
+@font-face {
+  font-family: 'EroFont';
+  src:  font-url('EroFont.eot?rxuxtg');
+  src:  font-url('EroFont.eot?rxuxtg#iefix') format('embedded-opentype'),
+    font-url('EroFont.ttf?rxuxtg') format('truetype'),
+    font-url('EroFont.woff?rxuxtg') format('woff'),
+    font-url('EroFont.svg?rxuxtg#EroFont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  &:not(.fa) {
+    font-family: 'EroFont' !important;
+    padding-right: 0.5px;
+  }
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ero-cross-circle:before {
+  content: "\e92e";
+}
+.ero-my-trips:before {
+  content: "\e92f";
+}
+.ero-heart-full:before {
+  content: "\e91f";
+}
+.ero-chevron-left-rounded:before {
+  content: "\e92b";
+}
+.ero-chevron-right-rounded:before {
+  content: "\e92c";
+}
+.ero-user:before {
+  content: "\e92a";
+}
+.ero-checkmark:before {
+  content: "\e929";
+}
+.ero-verified-border-gray .path1:before {
+  content: "\e918";
+  color: rgb(0, 194, 240);
+}
+.ero-verified-border-gray .path2:before {
+  content: "\e927";
+  margin-left: -0.962890625em;
+  color: rgb(240, 240, 240);
+}
+.ero-verified-border-gray .path3:before {
+  content: "\e928";
+  margin-left: -0.962890625em;
+  color: rgb(255, 255, 255);
+}
+.ero-verified-border-white .path1:before {
+  content: "\e900";
+  color: rgb(0, 194, 240);
+}
+.ero-verified-border-white .path2:before {
+  content: "\e916";
+  margin-left: -0.962890625em;
+  color: rgb(255, 255, 255);
+}
+.ero-verified-border-white .path3:before {
+  content: "\e917";
+  margin-left: -0.962890625em;
+  color: rgb(255, 255, 255);
+}
+.ero-chevron-left-big:before {
+  content: "\e919";
+}
+.ero-chevron-right-big:before {
+  content: "\e91a";
+}
+.ero-user-big:before {
+  content: "\e91b";
+}
+.ero-users-big:before {
+  content: "\e91c";
+}
+.ero-sad-face:before {
+  content: "\e91d";
+}
+.ero-trash:before {
+  content: "\e91e";
+}
+.ero-verified-outline:before {
+  content: "\e91f";
+}
+.ero-camera:before {
+  content: "\e920";
+}
+.ero-chevron-right:before {
+  content: "\e921";
+}
+.ero-chevron-double-right-2:before {
+  content: "\e922";
+}
+.ero-chevron-double-right:before {
+  content: "\e923";
+}
+.ero-alert-circle-outline:before {
+  content: "\e924";
+}
+.ero-pencil:before {
+  content: "\e925";
+}
+.ero-chevron-left:before {
+  content: "\e926";
+}
+.ero-unlocked:before {
+  content: "\e901";
+}
+.ero-new-trips:before {
+  content: "\e902";
+}
+.ero-new-people:before {
+  content: "\e903";
+}
+.ero-heart-2:before {
+  content: "\e904";
+}
+.ero-notifications:before {
+  content: "\e905";
+}
+.ero-hotline:before {
+  content: "\e906";
+}
+.ero-groups:before {
+  content: "\e907";
+}
+.ero-trips:before {
+  content: "\e908";
+}
+.ero-users:before {
+  content: "\e909";
+}
+.ero-log-out:before {
+  content: "\e90a";
+}
+.ero-settings:before {
+  content: "\e90b";
+}
+.ero-messages:before {
+  content: "\e90c";
+}
+.ero-menu:before {
+  content: "\e90d";
+}
+.ero-locker:before {
+  content: "\e90e";
+}
+.ero-heart:before {
+  content: "\e90f";
+}
+.ero-photo-amount:before {
+  content: "\e910";
+}
+.ero-search:before {
+  content: "\e911";
+}
+.ero-eye:before {
+  content: "\e912";
+}
+.ero-arrow-left:before {
+  content: "\e913";
+}
+.ero-arrow-right:before {
+  content: "\e914";
+}
+.ero-cross:before {
+  content: "\e915";
+}

@@ -1,0 +1,230 @@
+-# .row
+-# 	.col-12.col-lg-9.ml-lg-auto
+-# 		.pt-5
+-# 			- ['Anna', 'Lukas'].each do |person|
+-# 				= react_component "Post", {title: "Hello World " + person}, {prerender: true}
+-# 		.pt-5
+-# 			Select
+-# 			= react_component "Select", {placeholder: "Custom placeholder"}, {prerender: true}
+-# 		.pt-5
+-# 			Multiselect
+-# 			= react_component "MultiSelect", {}, {prerender: true}
+-# 		.pt-5
+-# 			Range
+-# 			= react_component "Range", {}, {prerender: true}
+-# 		.pt-5
+-# 			Slider
+-# 			= react_component "Slider", {}, {prerender: true}
+
+-# 		%h2.mt-5 Modal
+-# 		%button.btn.btn-primary(data-target="#exampleModal" data-toggle="modal" type="button")
+-# 			Launch demo modal
+-# 		#exampleModal.modal.fadeable(aria-hidden="true" aria-labelledby="exampleModalLabel" role="dialog" tabindex="-1")
+-# 			.modal-dialog(role="document")
+-# 				.modal-content
+-# 					.modal-header
+-# 						%h5#exampleModalLabel.modal-title Modal title
+-# 						%button.close(aria-label="Close" data-dismiss="modal" type="button")
+-# 							%span(aria-hidden="true")
+-# 								%i.ero-cross.f-s-20.d-inline-block.rotated-45deg
+-# 					.modal-body
+-# 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+-# 					.modal-footer
+-# 						%button.btn.btn-secondary(data-dismiss="modal" type="button") Close
+-# 						%button.btn.btn-primary(type="button") Save changes
+
+-# 		%h2.mt-5 Buttons
+-# 		%button.btn.btn-primary(type="button") Primary
+-# 		%button.btn.btn-secondary(type="button") Secondary
+-# 		%button.btn.btn-success(type="button") Success
+-# 		%button.btn.btn-info(type="button") Info
+-# 		%button.btn.btn-warning(type="button") Warning
+-# 		%button.btn.btn-danger(type="button") Danger
+-# 		%button.btn.btn-link(type="button") Link
+
+-# 		%h2.mt-5 Buttons - .btn-lg
+-# 		%button.btn.btn-primary.btn.btn-lg(type="button") Primary
+-# 		%button.btn.btn-secondary.btn.btn-lg(type="button") Secondary
+-# 		%button.btn.btn-success.btn.btn-lg(type="button") Success
+-# 		%button.btn.btn-info.btn.btn-lg(type="button") Info
+-# 		%button.btn.btn-warning.btn.btn-lg(type="button") Warning
+-# 		%button.btn.btn-danger.btn.btn-lg(type="button") Danger
+-# 		%button.btn.btn-link.btn.btn-lg(type="button") Link
+
+-# 		%h2.mt-5 Buttons - custom outlines
+-# 		%button.btn.btn-outline-primary.btn-outline-gray.text-gray(type="button") Gray text
+-# 		%button.btn.btn-outline-primary.btn-outline-gray(type="button") Primary text
+-# 		%button.btn.btn-outline-secondary.btn-outline-gray.text-gray(type="button") Gray text
+-# 		%button.btn.btn-outline-secondary.btn-outline-gray(type="button") Primary text
+
+-# 		%h2.mt-5 Button link .btn-link
+-# 		%button.btn.btn-link(type="button") Normal text
+-# 		%button.btn.btn-link.text-gray(type="button") Gray text
+
+-# 		%h2.mt-5 Button link .btn-link .icon-only, .rotated-45deg .no-underline-i
+-# 		%button.btn.btn-link.icon-only.no-underline-i(type="button")
+-# 			%i.ero-cross.rotated-45deg
+-# 		%button.btn.btn-link.icon-only.text-gray.no-underline-i(type="button")
+-# 			%i.ero-cross.rotated-45deg
+
+-# 		%h2.mt-5 Buttons - .icon-only, .btn-outline-*
+-# 		%button.btn.icon-only.btn-outline-primary.btn-outline-gray(type="button")
+-# 			%i.ero-cross
+-# 		%button.btn.icon-only.btn-outline-primary.btn-outline-gray.active(type="button")
+-# 			%i.ero-cross
+-# 		%button.btn.icon-only.btn-outline-secondary.btn-outline-gray(type="button")
+-# 			%i.ero-cross
+-# 		%button.btn.icon-only.btn-outline-secondary.btn-outline-gray.active(type="button")
+-# 			%i.ero-cross
+
+-# 		%h2.mt-5 Buttons - .icon-only, .icon-only-bigger, .btn-outline-*
+-# 		%button.btn.icon-only.icon-only-bigger.btn-outline-primary.btn-outline-gray(type="button")
+-# 			%i.ero-cross
+-# 		%button.btn.icon-only.icon-only-bigger.btn-outline-primary.btn-outline-gray.active(type="button")
+-# 			%i.ero-cross
+-# 		%button.btn.icon-only.icon-only-bigger.btn-outline-secondary.btn-outline-gray(type="button")
+-# 			%i.ero-cross
+-# 		%button.btn.icon-only.icon-only-bigger.btn-outline-secondary.btn-outline-gray.active(type="button")
+-# 			%i.ero-cross
+
+-# 		%h2.mt-5 Buttons - .btn-group
+-# 		%button.btn.icon-only.btn-eye.btn-group(type="button")
+-# 			%i.ero-eye
+-# 		%button.btn.icon-only.btn-eye.btn-group.active(type="button")
+-# 			%i.ero-eye
+-# 		%button.btn.icon-only.btn-plus.btn-group(type="button")
+-# 			%i.ero-cross
+-# 		%button.btn.icon-only.btn-plus.btn-group.active(type="button")
+-# 			%i.ero-cross
+
+-# 		%h2.mt-5 Buttons - .btn-container - (new prototpe, its style is based on additional calsses - .primary-border, .white-border)
+-# 		%button.btn.icon-only.btn-container.text-primary.primary-border.white-bg(type="button")
+-# 			%i.ero-chevron-double-right-2.f-s-15
+-# 		%button.btn.icon-only.btn-container.text-white.primary-border.secondary-bg(type="button")
+-# 			%i.ero-chevron-double-right.f-s-15
+-# 		%button.btn.icon-only.btn-container.text-gray.white-border.white-bg(type="button")
+-# 			%i.ero-chevron-double-right-2.f-s-15
+-# 		%button.btn.icon-only.btn-container.text-white.white-border.secondary-bg(type="button")
+-# 			%i.ero-chevron-double-right.f-s-15
+
+-# 		%h2.mt-5 Buttons - wrapped
+-# 		.btn-group-wrapper.d-inline-block
+-# 			%button.btn.icon-only.btn-wrapped.btn-group(type="button")
+-# 				%i.ero-eye
+-# 		.btn-group-wrapper.d-inline-block
+-# 			%button.btn.icon-only.btn-wrapped.btn-group(type="button")
+-# 				%i.ero-alert-circle-outline
+
+-# 		%h2.mt-5 Buttons - person scoped
+-# 		%button.btn.icon-only.btn-person.btn-heart.btn-group(type="button")
+-# 			%i.ero-heart
+-# 		%button.btn.icon-only.btn-person.btn-remove.btn-group(type="button")
+-# 			%i.ero-cross
+
+-# 		%h2.mt-5 Buttons - on dark bars
+-# 		%button.btn.icon-only.btn-dark-bar.active(type="button")
+-# 			%i.ero-heart
+-# 		%button.btn.icon-only.btn-dark-bar(type="button")
+-# 			%i.ero-heart
+-# 		%button.btn.icon-only.btn-dark-bar(type="button")
+-# 			%i.ero-settings
+
+-# 		%h2.mt-5 Buttons - .btn-small-dark
+-# 		%button.btn.icon-only.btn-small-dark(type="button")
+-# 			%i.ero-chevron-left.f-s-13
+-# 		%button.btn.icon-only.btn-small-dark(type="button")
+-# 			%i.ero-chevron-right.f-s-13
+-# 		%button.btn.icon-only.btn-small-dark(type="button")
+-# 			%i.ero-users.f-s-15
+-# 		%button.btn.icon-only.btn-small-dark(type="button")
+-# 			%i.ero-trash.f-s-18
+-# 		%button.btn.icon-only.btn-small-dark(type="button")
+-# 			%i.ero-locker.f-s-20
+
+-# 		%h2.mt-5 Buttons - .btn-big-dark
+-# 		%button.btn.icon-only.btn-big-dark(type="button")
+-# 			%i.ero-cross.rotated-45deg
+
+-# 		%h2.mt-5 Pagination
+-# 		%nav.mt-5(aria-label="...")
+-# 			%ul.pagination.justify-content-between
+-# 				%li.page-item.previous.disabled
+-# 					%a.page-link(href="#" tabindex="-1")
+-# 						%i.ero-arrow-left.mr-3
+-# 						%span.d-none.d-md-inline-block Poprzednia strona
+
+-# 				.page-wrapper
+-# 					%li.page-item.active
+-# 						%a.page-link(href="") 1
+-# 					%li.page-item
+-# 						%a.page-link(href="") 2
+-# 					%li.page-item
+-# 						%a.page-link(href="") 3
+-# 					%li.page-item
+-# 						%a.page-link(href="") 4
+-# 					%li.page-item
+-# 						%a.page-link(href="") 5
+
+-# 				%li.page-item.next
+-# 					%a.page-link(href="")
+-# 						%span.d-none.d-md-inline-block Następna strona
+-# 						%i.ero-arrow-right.ml-3
+
+-# 		%h6.mt-3.mb-3 Grupy
+-# 		.group-details.group-details-gray.streach-me
+-# 			.group-details-wrapper
+
+-# 				%h3.mt-0.d-md-none TRIP
+-# 				.ea-flex.ea-align-start
+-# 					%div
+-# 					= link_to image_tag 'girl.jpg'
+-# 					.text
+-# 						%h2.mt-0.d-none.d-md-block TRIP
+-# 						%p.text-book.text-gray.d-none.d-md-block Hydroderm is the highly desired anti-aging cream on the block. This serum restricts the occurrence of early aging sings on the skin and keep
+-# 						.group-info.m
+-# 							%p.mb-0
+-# 								%span.text-primary 2310
+-# 								%span.text-gray użytkowników
+-# 							%p.mb-0
+-# 								%span.text-primary 70
+-# 								%span.text-gray ukrytych
+
+-# 				%button.btn.icon-only.btn-plus.btn-group(type="button")
+-# 					%i.ero-cross
+-# 				.btn-group-wrapper
+-# 					%button.btn.icon-only.btn-wrapped.btn-group(type="button")
+-# 						%i.ero-eye
+
+-# 		%h6.mt-3.mb-3 Profile box
+-# 		.profile-box.profile-box-gray.streach-me
+-# 			.group-details-wrapper
+
+-# 				.ea-flex.ea-align-center
+-# 					%div
+-# 					= link_to image_tag 'girl.jpg'
+-# 					.text
+-# 						.profile-info-wrapper
+-# 							.profile-info
+-# 								.profile-info-upper
+-# 									.person-status.away
+-# 									%h4.mb-0
+-# 										%span Ola,
+-# 										%span.text-gray 18
+-# 									%i.ero-verified-border-gray.ml-2.f-s-30
+-# 										%span.path1
+-# 										%span.path2
+-# 										%span.path3
+-# 								.profile-info-lower.mb-3
+-# 									%span.text-gray 2 dni temu,
+-# 									%span.text-gray Poznań
+
+-# 						%p.text-book.text-gray Hydroderm is the highly desired anti-aging cream on the block. This serum restricts the occurrence of early aging sings on the skin and keep
+
+-# 				%button.btn.icon-only.btn-plus.btn-group(type="button")
+-# 					%i.ero-cross
+-# 				.btn-group-wrapper
+-# 					%button.btn.icon-only.btn-wrapped.btn-group(type="button")
+-# 						%i.ero-alert-circle-outline
+
+
+

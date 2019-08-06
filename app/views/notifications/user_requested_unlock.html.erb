@@ -1,0 +1,26 @@
+<tr>
+<td style="padding:0 5%;text-align:center">
+	<a style="display:inline-block;vertical-align:top" href="" target="_blank">
+		<img style="min-height:80px;vertical-align:top;border-radius:50%" src="<%= @asset_host %><%= @permitted.avatar_url("rect_160") %>" alt="" width="80" border="0">
+	</a>
+</td>
+</tr>
+<tr>
+<td style="padding:4% 5% 0;text-align:center">
+	<div style="display:inline-block;vertical-align:top">
+		<table style="max-width:480px;margin:0 auto" width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<td align="center"><span style="font-size:22px;line-height:26px;color:#000"> <%= @permitted.name %> prosi Cię o udostępnienie <%= @requested %>! </span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+<tr>
+<td style="padding:2% 5% 3%;text-align:center"><span style="font-size:16px;line-height:22px;color:#7f7f7f;display:inline-block;vertical-align:top;max-width:470px"> Komuś musi na Tobie zależeć! Nie zwlekaj...</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><a style="display:inline-block;padding:13px 30px;background:#E8126B;text-decoration:none;border-radius:25px;color:#fff;font-weight:600;font-size:16px;text-align:center" href="<%= @asset_host %>/profile/<%= @permitted.id %>" target="_blank"> Zobacz profil i zdjęcia </a></td>
+</tr>

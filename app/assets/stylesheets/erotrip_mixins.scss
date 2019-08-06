@@ -1,0 +1,21 @@
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition:    $args;
+  -ms-transition:     $args;
+  -o-transition:      $args;
+  transition:         $args;
+}
+
+@mixin rotate($amount) {
+	-webkit-transform: rotate($amount+deg);
+	-moz-transform: rotate($amount+deg);
+	-o-transform: rotate($amount+deg);
+	-ms-transform: rotate($amount+deg);
+	transform: rotate($amount+deg);
+}
+
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

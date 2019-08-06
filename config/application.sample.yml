@@ -1,0 +1,15 @@
+SESSION_TTL: "20"
+API_SECRET_LENGTH: "128"
+DEFAULT_LIMIT: "1000"
+
+ASSET_HOST: "http://localhost:3000"
+
+NOTIFICATIONS_THRESHOLD: "20"
+
+# insert this ONLY if mails should be redirected!
+DELIVER_MAILS_TO: 'noreply@enginearch.com'
+
+# REDIS:
+REDIS_HOST: "localhost"
+REDIS_PORT: "6379"
+REDIS_CHANNEL_PREFIX: "ero-dev"

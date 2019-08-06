@@ -1,0 +1,200 @@
+-# .row
+-# 	.col-12.col-lg-9.ml-lg-auto
+-# 		.profile-edit
+
+-# 			.profile-info-bar.streach-me
+-# 				.profile-info-bar-inner
+-# 					.profile-info-wrapper
+-# 						.profile-info.ml-3
+-# 							.profile-info-upper.mb-2.mt-1
+-# 								.person-status.away
+-# 								%h3.text-white.text-book.mb-0 Ola, 18
+-# 							.profile-info-lower
+-# 								%span.text-white 2 dni temu,
+-# 								%span.text-white Poznań
+-# 					%button.btn.icon-only.btn-dark-bar(type="button")
+-# 						%i.ero-settings
+
+-# 			.profile-gallery.streach-me
+-# 				.profile-gallery-inner
+-# 					= image_tag('girl-gallery.jpg', class: "img-fit")
+
+-# 					.gallery-count
+-# 						%span 1/6
+
+-# 					.action-buttons
+-# 						%button.btn.icon-only.btn-small-dark.mr-1(type="button" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom")
+-# 							%i.ero-users.f-s-15
+-# 						%button.btn.icon-only.btn-small-dark.mr-1(type="button" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom")
+-# 							%i.ero-locker.f-s-20
+-# 						%button.btn.icon-only.btn-small-dark.mr-1(type="button" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom")
+-# 							%i.ero-trash.f-s-18
+
+-# 					.gallery-close
+-# 						%button.btn.icon-only.btn-big-dark(type="button")
+-# 							%i.ero-cross.rotated-45deg
+
+-# 					%a.chevron-left-big
+-# 						%i.ero-chevron-left-big
+
+-# 					%a.chevron-right-big
+-# 						%i.ero-chevron-right-big
+
+-# 			.profile-photos-bar.streach-me
+-# 				.profile-photos-bar-inner.ea-flex
+-# 					%a.add-photo.no-underline-i(href="")
+-# 						%i.ero-camera.f-s-30.text-white
+-# 						.f-s-12.text-white.mt-1 Dodaj zdjęcie
+-# 					%a.verification.no-underline-i(href="")
+-# 						.verification-text-wrapper
+-# 							.verification-text.text-center
+-# 								%i.ero-verified-outline.f-s-30.text-white
+-# 								.f-s-12.text-white.mt-1 Zweryfikowany
+-# 						= image_tag('girl.jpg', class: "verification-img")
+
+-# 					.photos
+-# 						.photo
+-# 							.photo-action-buttons
+-# 								%button.btn.icon-only.btn-small-dark.mr-1(type="button")
+-# 									%i.ero-users.f-s-15
+-# 								%button.btn.icon-only.btn-small-dark.mr-1(type="button")
+-# 									%i.ero-locker.f-s-20
+-# 								%button.btn.icon-only.btn-small-dark.mr-1(type="button")
+-# 									%i.ero-trash.f-s-18
+-# 							= link_to image_tag('girl.jpg', class: "img-fluid"), nil, :class => "d-inline-block"
+-# 						.photo
+-# 							%a.confirm-deletion.no-underline-i(href="")
+-# 								%i.ero-trash.f-s-30.text-white
+-# 								.f-s-12.text-white.mt-1 Potwierdź usunięcie
+-# 							= link_to image_tag('girl.jpg', class: "img-fluid"), nil, :class => "d-inline-block"
+-# 						.photo
+-# 							%a.confirm-deletion.no-underline-i(href="")
+-# 								%i.ero-locker.f-s-30.text-white
+-# 								.f-s-12.text-white.mt-1 Prywatne zdjęcie
+-# 							= link_to image_tag('girl.jpg', class: "img-fluid"), nil, :class => "d-inline-block blurred"
+
+
+
+
+
+-# 			.profile-details
+-# 				.ea-flex.ea-align-center.ea-just-space-between.mt-4.mb-4
+-# 					.ea-flex.ea-align-center
+-# 						.profile-avatar
+-# 							.change
+-# 								.f-s-13 Zmień
+-# 							= image_tag 'girl.jpg'
+-# 						.ml-3
+-# 							%h5.mt-0.mb-1 Chce poznać
+-# 							%h6.mt-0.mb-0.text-gray.text-book Poznać nowych ludzi
+
+-# 					%button.btn.btn-outline-primary.btn-outline-gray.btn-lg(type="button") Zgłoś użytkownika
+-# 				.divider
+
+-# 				.profile-decription
+-# 					%h6.mt-4.mb-3.d-inline-block O mnie
+-# 					%button.btn.btn-outline-secondary.btn-outline-gray.ml-2(type="button")
+-# 						%i.ero-pencil.mr-2
+-# 						.mr-1.d-inline-block Edytuj
+
+-# 					%form.profile-preferences.mt-3.mb-2
+-# 						.row
+-# 							.col-12.col-md-6.pt-3.pb-3.border-right
+-# 								.row.mb-2
+-# 									.col-6.ea-flex.ea-align-center Szukam
+-# 									.col-6
+-# 										= react_component "MultiSelect", {prerender: true, placeholder: "Wybierz"}
+-# 								.row.mb-2
+-# 									.col-6.ea-flex.ea-align-center Waga
+-# 									.col-6
+-# 										= react_component "Select", {prerender: true, placeholder: "Wybierz"}
+-# 								.row
+-# 									.col-6.ea-flex.ea-align-center Wzrost
+-# 									.col-6
+-# 										= react_component "Select", {prerender: true, placeholder: "Wybierz"}
+
+-# 							.col-12.col-md-6.pt-3.pb-3
+-# 								.row.mb-2
+-# 									.col-6.ea-flex.ea-align-center Sylwetka
+-# 									.col-6
+-# 										= react_component "Select", {prerender: true, placeholder: "Wybierz"}
+-# 								.row.mb-2
+-# 									.col-6.ea-flex.ea-align-center Papierosy
+-# 									.col-6
+-# 										= react_component "Select", {prerender: true, placeholder: "Wybierz"}
+-# 								.row
+-# 									.col-6.ea-flex.ea-align-center Alkohol
+-# 									.col-6
+-# 										= react_component "Select", {prerender: true, placeholder: "Wybierz"}
+
+-# 						.row.mt-3.mb-3
+-# 							.col
+-# 								%button.btn.btn-secondary(type="submit")
+-# 									Zapisz
+-# 					.divider
+
+-# 					%h6.mt-3.mb-3 Zainteresowania
+-# 					.divider
+
+-# 					%h6.mt-3.mb-3 Lubię
+-# 					%textarea.form-control(placeholder="Tekst twojego zgłoszenia")
+-# 					%button.btn.btn-secondary.mt-3.mb-3(type="submit")
+-# 						Zapisz
+-# 					.divider
+
+-# 					%h6.mt-3.mb-3 Nie lubię
+-# 					.divider
+
+-# 					%h6.mt-3.mb-5 Wymarzony partner
+
+-# 		.featured.featured-large.streach-me
+-# 			.patch
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+
+-# 		.footer.streach-me.d-none.d-xl-block
+-# 			.patch
+-# 			.row.no-gutters
+-# 				.col
+-# 					.footer-stats-wrapper
+-# 						.footer-stats
+-# 							.name Użytkowników
+-# 							.number 2 335 542
+-# 				.col
+-# 					.footer-stats-wrapper
+-# 						.footer-stats
+-# 							.name Zweryfikowanych
+-# 							.number 2 115 542
+-# 				.col
+-# 					.footer-stats-wrapper
+-# 						.footer-stats
+-# 							.name Online
+-# 							.number 15 123
+-# 				.col
+-# 					.footer-stats-wrapper
+-# 						.footer-stats
+-# 							.name Ukrytych
+-# 							.number 75 123
+-# 				.col
+-# 					.footer-stats-wrapper
+-# 						.footer-stats
+-# 							.name Przejazdów
+-# 							.number 92 123
+
+
+
+
+
+

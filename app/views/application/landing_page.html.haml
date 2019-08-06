@@ -1,0 +1,383 @@
+.landing-page.container-fluid
+
+  -# SIDEBAR
+  .sidebar#sidebar.d-block.d-md-none
+    .logo-wrapper
+      %button.btn.btn-outline-primary.btn-outline-gray.btn-close.icon-only.mr-4#button-close
+        %i.ero-cross.rotated-45deg
+      = link_to image_tag('logo_obrys_white_small_v2.png')
+
+    %span
+      %div.logged-out
+        %a.text-secondary.text-ellipsis.mt-0.f-s-16.join-us
+          Dołącz do nas!
+        %p.text-ellipsis.mt-0.mb-0
+          %span.text-gray.text-book.f-s-13-5 Masz już konto?
+          %a.text-primary.f-s-13-5 Zaloguj się
+
+      .logged-out-mini
+        %button.btn.icon-only.btn-outline-primary.btn-outline-gray(type="button")
+          %i.ero-user.f-s-20
+
+    .menu
+      %button.btn.btn-secondary.btn-block
+        Dodaj wycieczkę
+
+      %ul.main-submenu
+        %li.menu-item
+          %a
+            .icon-wrapper
+              %i.ero-users
+            .label.fadeable Użytkownicy
+        %li.menu-item
+          %a
+            .icon-wrapper
+              %i.ero-trips
+            .label.fadeable Wycieczki
+        %li.menu-item.active
+          %a
+            .icon-wrapper
+              %i.ero-groups
+            .label.fadeable Grupy
+        %li.menu-item
+          %a
+            .icon-wrapper
+              %i.ero-hotline
+            .label.fadeable Hotline
+
+      %button.btn.btn-primary.btn-block
+        Moje wycieczki
+
+      %ul.fadeable.secondary-submenu
+        %li.menu-item
+          %a
+            .icon-wrapper
+              %i.ero-messages
+            .label Wiadmości
+        %li.menu-item
+          %a
+            .icon-wrapper
+              %i.ero-notifications
+            .label Powiadomienia
+        %li.menu-item
+          %a
+            .icon-wrapper
+              %i.ero-heart-2
+            .label Chcą Cię poznać
+        %li.menu-item
+          %a
+            .icon-wrapper
+              %i.ero-eye
+            .label Podglądacz
+        %li.menu-item
+          %a
+            .icon-wrapper
+              %i.ero-new-people
+            .label Nowe osoby
+        %li.menu-item
+          %a
+            .icon-wrapper
+              %i.ero-new-trips
+            .label Nowe wycieczki
+        %li.menu-item
+          %a
+            .icon-wrapper
+              %i.ero-unlocked
+            .label Odblokowania
+        %li.menu-item
+          %a
+            .icon-wrapper
+              %i.ero-locker
+            .label Tryb anonimowy
+
+  -# MAIN
+  .row.no-gutters.header-wrapper
+    .col
+      .container.header
+        .menu-button-wrapper.d-block.d-md-none
+          %button.btn.btn-outline-primary.btn-outline-gray.icon-only.with-label.more#open-button(type="button")
+            %i.ero-menu
+
+        .logo-wrapper
+          = image_tag('logo_obrys_v2.png')
+
+        .buttons-wrapper.d-none.d-md-block
+          .btn.btn-link.mr-0.mr-lg-3 Zarejestruj się
+          .btn.btn-secondary.mr-0.mr-lg-3 Pokaż przejazdy
+          .btn.btn-primary.mr-0.mr-lg-3 Użytkownicy
+          .btn.btn-link Zaloguj się
+
+  .row.no-gutters.section.woman
+    .col
+      .container.upper-container.d-none.d-md-block
+        .container-text
+          %h1.main
+            %p.mb-0
+              %span.text-secondary Sprawdź
+              %span kto będzie
+            %p.mb-0 w twoim mieście
+          %h1.additional
+            %p.mb-0 Poznaj atrakcyjne osoby
+            %p.mb-0 które nie znają twoich znajomych
+            %p.mb-0 pełna dyskrecja w zasiegu ręki
+
+        .upper-container-buttons
+          = image_tag('google_store.png', class: "d-inline-block mr-4 ml-xl-5")
+          = image_tag('apple_store.png', class: "d-inline-block")
+
+
+        = image_tag('woman.png', class: "woman")
+
+      .container.upper-container.d-block.d-md-none
+        .container-text
+          %h1.main
+            %p.mb-0
+              %span.text-secondary Sprawdź
+              %span kto
+            %p.mb-0 będzie w
+            %p.mb-0 twoim mieście
+          %h1.additional
+            %p.mb-0 Pełna dyskrecja w zasięgu ręki
+
+        .buttons-wrapper
+          .btn.btn-secondary.mr-0.mr-lg-3 Pokaż przejazdy
+          .btn.btn-primary.mr-0.mr-lg-3 Użytkownicy
+
+        .upper-container-buttons
+          = image_tag('google_store.png', class: "d-inline-block")
+          = image_tag('apple_store.png', class: "d-inline-block")
+
+  .row.no-gutters.section.blue
+    .col
+      .container.phone-container.d-none.d-md-block.d-lg-flex
+        = image_tag('phone_mock_trips.png')
+        .container-text
+          %h1.main
+            %p.mb-0
+              %span<> D
+              %span.btn.btn-container.text-white.secondary-bg<>
+                %i.ero-cross.f-s-18<>
+              %span.mr-3<> daj
+              %span krótkie
+            %p.mb-0 wiadomości hotline
+          %h1.additional
+            %p.mb-0 jeżeli masz propozycje spotkania
+            %p.mb-0 w dniu dzisiejszym w swojej okolicy
+            %p.mb-0 każdą z nich dodasz anonimowo
+
+      .container.phone-container.d-flex.d-md-none
+        = image_tag('phone_mock_trips.png')
+
+        .container-text
+          %h1.main
+            %p.mb-0 Dodaj krótkie
+            %p.mb-0 wiadomości hotline
+          %h1.additional
+            %p.mb-0 jeżeli masz propozycje spotkania
+            %p.mb-0 w dniu dzisiejszym w swojej okolicy
+            %p.mb-0 każdą z nich dodasz anonimowo
+
+
+  .row.no-gutters.section.man
+    .col
+      .container.upper-container.d-none.d-md-block
+        .container-text
+          %h1.main
+            %p.mb-0
+              %span.text-secondary<> D
+              %span.btn.btn-container.text-white.secondary-bg<>
+                %i.ero-cross.f-s-18<>
+              %span.text-secondary.mr-4<> daj
+              %span przejazd
+            %p.mb-0 powiadom tysiące
+          %h1.additional
+            %p.mb-0 osób po trasie twojego przejazdu
+            %p.mb-0 sprawdź kto chciałby się spotkać
+            %p.mb-0 z tobą w wybranych miastach
+
+        = image_tag('man-erotrip.png', class: "man")
+
+      .container.upper-container.d-block.d-md-none
+        .container-text
+          %h1.main
+            %p.mb-0
+              %span.text-secondary Dodaj
+            %p.mb-0 przejazd
+            %p.mb-0 powiadom
+            %p.mb-0 tysiące
+          %h1.additional
+            %p.mb-0 osób po trasie twojego przejazdu
+            %p.mb-0 sprawdź kto chciałby się spotkać
+            %p.mb-0 z tobą w wybranych miastach
+
+        .buttons-wrapper
+          .btn.btn-secondary Dodaj przejazd
+
+
+  .row.no-gutters.section.red
+    .col
+      .container.phone-container.d-none.d-md-block.d-lg-flex
+        = image_tag('phone_mock_add_trip.png')
+        .container-text
+          %h1.main
+            %p.mb-0 Zapisz się do
+            %p.mb-0 licznych grup
+          %h1.additional
+            %p.mb-0 poznasz wiele ciekawych osób
+            %p.mb-0 o podobnych zainteresowaniach
+            %p.mb-0 zapisuj się również anonimowo
+
+      .container.phone-container.d-flex.d-md-none
+        = image_tag('phone_mock_add_trip.png')
+
+        .container-text
+          %h1.main
+            %p.mb-0 Zapisz się do
+            %p.mb-0 licznych grup
+          %h1.additional
+            %p.mb-0 poznasz wiele ciekawych osób
+            %p.mb-0 o podobnych zainteresowaniach
+            %p.mb-0 zapisuj się również anonimowo
+
+  .row.no-gutters
+    .col
+      .container.footer
+        .mb-2.mb-md-3.text-center
+          %p.mb-0.mr-2.d-block.d-md-inline-block.contact.text-gray-light.f-s-11 Copyright 2017 Ⓒ Erotrip.pl
+          %p.mb-0.mr-2.d-block.d-md-inline-block.text-gray-light.f-s-11 Wszystkie prawa zastrzeżone
+
+        .mb-3
+          %a.mr-3(href="mailto:kontakt@erotrip.pl") kontakt@erotrip.pl
+          -# %a(href="#") Regulamin
+
+  -# MODAL
+  .modal.fade#exampleModal(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+    .modal-dialog(role="document")
+      .modal-content
+        .modal-header
+          = image_tag('logo_obrys_v2.png')
+          %button.close(data-dismiss="modal" aria-label="Close")
+            %span(aria-hidden="true") &times;
+
+        .modal-body
+          .content-wrapper
+            %h1.main
+              %p.mb-0.text-secondary STARTUJEMY!
+              %p.mb-0 JUŻ WKRÓTCE
+
+            %form(novalidate)
+              .form-group
+                %input#input.form-control#exampleInputEmail1(type="email" class="form-control" aria-describedby="emailHelp" placeholder="Podaj swojego e-maila")
+                .invalid-feedback Wystąpił błąd
+              %button.btn.btn-secondary.btn-block(type="submit")
+                %span.f-s-20 Powiadom mnie!
+
+            %h1.additional
+              %p.mb-0 SETKI PRZEJAZDÓW
+              %p.mb-0 DZIESIĄTKI OGŁOSZEŃ
+              %p.mb-0 W TWOJEJ OKOLICY
+
+          %h2.success Dzięki, powiadomimy cię kiedy wystartujemy!
+
+:javascript
+  // open sidebar
+  var sidebar     = document.getElementById('sidebar');
+  var buttonOpen  = document.getElementById('open-button');
+  var buttonClose = document.getElementById('button-close');
+  buttonOpen.addEventListener('click', function(e) {
+    e.stopPropagation();
+    sidebar.classList.add('open');
+  });
+  buttonOpen.addEventListener('touch', function(e) {
+    e.stopPropagation();
+    sidebar.classList.add('open');
+  });
+  buttonClose.addEventListener('click', function(e) {
+    e.stopPropagation();
+    sidebar.classList.remove('open');
+  });
+  buttonClose.addEventListener('touch', function(e) {
+    e.stopPropagation();
+    sidebar.classList.remove('open');
+  });
+
+  // modal opening
+  var modal = $('#exampleModal');
+
+  var timeout;
+  var openModal = function() {
+    if (timeout) { clearTimeout(timeout) }
+    modal.modal('show');
+    resetModal();
+    deattachEvent();
+  }
+
+  modal.on('hidden.bs.modal', function (e) {
+    attachEvent();
+  })
+
+  var attachEvent = function() {
+    $('.landing-page').on('click touch tap', openModal);
+  }
+
+  var deattachEvent = function() {
+    $('.landing-page').off('click touch tap', openModal);
+  }
+
+  var animateModal = function() {
+    $('.modal-dialog').addClass('animate');
+    timeout = setTimeout( function() {
+      modal.modal('hide');
+    }, 3000);
+  }
+
+  var resetModal = function() {
+    $('.modal-dialog').removeClass('animate');
+    $('input')[0].value = "";
+  }
+
+  attachEvent(); // fires initially
+
+  var validateEmail = function(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+
+  $('form').submit( function(e) {
+    e.preventDefault()
+
+    if (validateEmail($('input').val())) {
+      $.ajax({
+        url: "/newsletter_subscriptions/create",
+        type: "POST",
+        dataType: "json",
+        contentType: 'application/x-www-form-urlencoded',
+        data: {
+          newsletter_subscription: {
+            email: $('input').val()
+          }
+        },
+        success: function(data) {
+          $('input').removeClass('is-invalid');
+          animateModal()
+        },
+        error: function(xhr) {
+          $('input').addClass('is-invalid');
+          var e = JSON.parse(xhr.responseText).email[0];
+          $('.invalid-feedback')[0].innerHTML = e;
+        }
+      });
+    } else {
+      $('input').addClass('is-invalid');
+      $('.invalid-feedback')[0].innerHTML = "wprowadź poprawny adress email"
+    }
+  });
+
+  // special style for windows
+  if (navigator.appVersion.indexOf("Win")!=-1) {
+    var styleElement = document.head.appendChild(document.createElement("style"));
+    styleElement.innerHTML = ".btn-container { margin-top: 0px !important; }"
+  }
+
+
+

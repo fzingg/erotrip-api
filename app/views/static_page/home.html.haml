@@ -1,0 +1,425 @@
+-# .row
+-# 	.col-12.col-lg-9.ml-lg-auto
+-# 		.featured.streach-me
+-# 			.patch
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+
+-# 		.group-details.streach-me
+-# 			.patch
+-# 			.group-details-wrapper
+-# 				%h3.mt-0.d-md-none TRIP
+-# 				.ea-flex.ea-align-start
+-# 					%div
+-# 					= link_to image_tag 'girl.jpg'
+-# 					.text
+-# 						%h2.mt-0.d-none.d-md-block TRIP
+-# 						%p.text-book.text-gray.d-none.d-md-block Hydroderm is the highly desired anti-aging cream on the block. This serum restricts the occurrence of early aging sings on the skin and keep
+-# 						.group-info.m
+-# 							%p.mb-0
+-# 								%span.text-primary 2310
+-# 								%span.text-gray użytkowników
+-# 							%p.mb-0
+-# 								%span.text-primary 70
+-# 								%span.text-gray ukrytych;
+-# 							%p.mb-0
+-# 								%span.text-primary Twój profil
+-# 								%span.text-gray Publiczny
+
+-# 				%button.btn.icon-only.btn-plus.btn-group(type="button")
+-# 					%i.ero-cross
+-# 				%button.btn.icon-only.btn-eye.btn-group(type="button")
+-# 					%i.ero-eye
+
+-# 		%form.search
+-# 			.search-header
+-# 				.info.f-s-16
+-# 					%span.text-primary 2310
+-# 					%span.text-gray użytkowników
+
+-# 				.search-input
+-# 					%a.btn.btn-outline-primary.btn-outline-gray.icon-only.with-label.more.mr-3
+-# 						%i.ero-search
+-# 					= react_component "Select", {name: 'sorts', placeholder: 'Sortuj'}
+
+-# 			-# .row.search-body.open
+-# 			.row.search-body.open
+-# 				.col-12.search-header-mobile.d-md-none
+-# 					%span Wyszukaj
+-# 					%button.btn.btn-outline-primary.btn-outline-gray.icon-only.rotated-45deg(type="button")
+-# 						%i.ero-cross
+
+-# 				.col-12.col-xl-6.search-preferences
+-# 					.row
+-# 						.col-12.col-md-6
+-# 							.form-group
+-# 								%label Szukam
+-# 								= react_component "MultiSelect", {placeholder: "Szukam", options: [{value: 'm', label: 'Mężczyzn'}, {value: 'f', label: 'Kobiet'}], name: 'gender[]', selection: params[:gender] || []}
+-# 						.col-12.col-md-6
+-# 							.form-group
+-# 								%label Szukających
+-# 								= react_component "MultiSelect", {placeholder: "Szukających", name: 'gender_opposite[]', selection: params[:gender_opposite] || []}
+
+-# 				.col-12.col-xl-6.location
+-# 					.form-group
+-# 						%label Gdzie
+-# 						= react_component "Select", {placeholder: "Gdzie", options: [{value: 1, label: 'Jeden'}, {value: 2, label: 'Dwa'}], name: 'where', selection: params[:where] || ''}
+
+-# 				.col-12.col-xl-6.age
+-# 					.form-group
+-# 						%label Wiek
+-# 						= react_component "SliderRange", {name: 'age[]', selection: params[:age] || [20, 30] }
+
+-# 				.col-12.col-xl-6.location-range
+-# 					.form-group
+-# 						%label Cała polska
+-# 						= react_component "Slider", {name: 'distance', selection: params[:distance] || 30 }
+
+-# 				.col-12.col-xl-6.height
+-# 					.row
+-# 						.col-12.col-md-6
+-# 							.form-group
+-# 								%label Wzrost
+-# 								= react_component "MultiSelect", {placeholder: "Wzrost", name: 'height[]', selection: params[:height] || []}
+
+-# 						.col-12.col-md-6
+-# 							.form-group
+-# 								%label Sylwetka
+-# 								= react_component "MultiSelect", {placeholder: "Sylwetka", name: 'look[]', selection: params[:look] || []}
+
+-# 						.col-12
+-# 							.form-group
+-# 								%label Zainteresowania
+-# 								= react_component "MultiSelectWithLabels", {placeholder: "Zainteresowania", name: 'interests[]', selection: params[:interests] || []}
+
+-# 				.col-12.col-xl-6.options
+-# 					%fieldset.form-group
+-# 						%legend Tylko
+-# 						.form-check.form-check-inline
+-# 							%label.form-check-label
+-# 								%input.form-check-input(type="checkbox")
+-# 								%span
+-# 								Zweryfikowani
+
+-# 						.form-check.form-check-inline
+-# 							%label.form-check-label
+-# 								%input.form-check-input(type="checkbox")
+-# 								%span
+-# 								Ze zdjęciami
+
+-# 					%fieldset.form-group
+-# 						%legend Dodatkowo
+-# 						.form-check.form-check-inline
+-# 							%label.form-check-label
+-# 								%input.form-check-input(type="checkbox")
+-# 								%span
+-# 								Papierosy
+
+-# 						.form-check.form-check-inline
+-# 							%label.form-check-label
+-# 								%input.form-check-input(type="checkbox")
+-# 								%span
+-# 								Alkohol
+
+-# 				.col.search-footer
+-# 					%button.btn.btn-secondary.mr-4(type="submit") Pokaż
+-# 					%button.btn.btn-outline-primary.btn-outline-gray.text-gray(type="button") Anuluj
+
+-# 		.row.people-wrapper
+-# 			.col-6.col-md-4.col-lg-4.col-xl-3
+-# 				.person
+-# 					.person-photo-wrapper
+-# 						.person-actions
+-# 							%button.btn.icon-only.btn-person.btn-heart.btn-group(type="button")
+-# 								%i.ero-heart
+-# 							%button.btn.icon-only.btn-person.btn-remove.btn-group.ml-2(type="button")
+-# 								%i.ero-cross
+-# 						.person-photo-amount.d-none.d-md-flex
+-# 							%i.ero-photo-amount
+-# 							%span.amount 6
+-# 						.locker
+-# 							%i.ero-locker
+-# 						= image_tag 'girl.jpg'
+
+-# 					.person-info.ea-flex.ea-flex-align-start.ea-just-start
+-# 						.person-status.online
+-# 						.person-details
+-# 							.person-name-age
+-# 								%h5.mt-0.mb-0.d-inline-block.person-name
+-# 									%span Anna
+-# 									%span.coma.d-none.d-md-inline-block ,
+-# 								%h5.mt-0.mb-0.person-age.text-gray 24
+-# 							.preson-city.text-gray.d-none.d-md-block
+-# 								Warszawa
+
+-# 			.col-6.col-md-4.col-lg-4.col-xl-3
+-# 				.person
+-# 					.person-photo-wrapper
+-# 						.person-actions
+-# 							%button.btn.icon-only.btn-person.btn-heart.btn-group(type="button")
+-# 								%i.ero-heart
+-# 							%button.btn.icon-only.btn-person.btn-remove.btn-group.ml-2(type="button")
+-# 								%i.ero-cross
+-# 						.person-photo-amount.d-none.d-md-flex
+-# 							%i.ero-photo-amount
+-# 							%span.amount 6
+-# 						.locker
+-# 							%i.ero-locker
+-# 						= image_tag 'girl.jpg'
+
+-# 					.person-info.ea-flex.ea-flex-align-start.ea-just-start
+-# 						.person-status.offline
+-# 						.person-details
+-# 							.person-name-age
+-# 								%h5.mt-0.mb-0.d-inline-block.person-name
+-# 									%span Anna
+-# 									%span.coma.d-none.d-md-inline-block ,
+-# 								%h5.mt-0.mb-0.person-age.text-gray 24
+-# 							.preson-city.text-gray.d-none.d-md-block
+-# 								Warszawa
+
+-# 			.col-6.col-md-4.col-lg-4.col-xl-3
+-# 				.person.locked
+-# 					.person-photo-wrapper
+-# 						.person-actions
+-# 							%button.btn.icon-only.btn-person.btn-heart.btn-group(type="button")
+-# 								%i.ero-heart
+-# 							%button.btn.icon-only.btn-person.btn-remove.btn-group.ml-2(type="button")
+-# 								%i.ero-cross
+-# 						.person-photo-amount.d-none.d-md-flex
+-# 							%i.ero-photo-amount
+-# 							%span.amount 6
+-# 						.locker
+-# 							%i.ero-locker
+-# 						= image_tag 'girl.jpg'
+
+-# 					.person-info.ea-flex.ea-flex-align-start.ea-just-start
+-# 						.person-status.away
+-# 						.person-details
+-# 							.person-name-age
+-# 								%h5.mt-0.mb-0.d-inline-block.person-name
+-# 									%span Hermenegildaaaaaa
+-# 									%span.coma.d-none.d-md-inline-block ,
+-# 								%h5.mt-0.mb-0.person-age.text-gray 24
+-# 							.preson-city.text-gray.d-none.d-md-block
+-# 								Warszawa
+
+-# 			.col-6.col-md-4.col-lg-4.col-xl-3
+-# 				.person
+-# 					.person-photo-wrapper
+-# 						.person-actions
+-# 							%button.btn.icon-only.btn-person.btn-heart.btn-group(type="button")
+-# 								%i.ero-heart
+-# 							%button.btn.icon-only.btn-person.btn-remove.btn-group.ml-2(type="button")
+-# 								%i.ero-cross
+-# 						.person-photo-amount.d-none.d-md-flex
+-# 							%i.ero-photo-amount
+-# 							%span.amount 6
+-# 						.locker
+-# 							%i.ero-locker
+-# 						= image_tag 'girl.jpg'
+
+-# 					.person-info.ea-flex.ea-flex-align-start.ea-just-start
+-# 						.person-status.away
+-# 						.person-details
+-# 							.person-name-age
+-# 								%h5.mt-0.mb-0.d-inline-block.person-name
+-# 									%span Anna
+-# 									%span.coma.d-none.d-md-inline-block ,
+-# 								%h5.mt-0.mb-0.person-age.text-gray 24
+-# 							.preson-city.text-gray.d-none.d-md-block
+-# 								Warszawa
+
+-# 			.col-6.col-md-4.col-lg-4.col-xl-3
+-# 				.person.locked
+-# 					.person-photo-wrapper
+-# 						.person-actions
+-# 							%button.btn.icon-only.btn-person.btn-heart.btn-group(type="button")
+-# 								%i.ero-heart
+-# 							%button.btn.icon-only.btn-person.btn-remove.btn-group.ml-2(type="button")
+-# 								%i.ero-cross
+-# 						.person-photo-amount.d-none.d-md-flex
+-# 							%i.ero-photo-amount
+-# 							%span.amount 6
+-# 						.locker
+-# 							%i.ero-locker
+-# 						= image_tag 'girl.jpg'
+
+-# 					.person-info.ea-flex.ea-flex-align-start.ea-just-start
+-# 						.person-status.online
+-# 						.person-details
+-# 							.person-name-age
+-# 								%h5.mt-0.mb-0.d-inline-block.person-name
+-# 									%span Anna
+-# 									%span.coma.d-none.d-md-inline-block ,
+-# 								%h5.mt-0.mb-0.person-age.text-gray 24
+-# 							.preson-city.text-gray.d-none.d-md-block
+-# 								Warszawa
+
+-# 			.col-6.col-md-4.col-lg-4.col-xl-3
+-# 				.person
+-# 					.person-photo-wrapper
+-# 						.person-actions
+-# 							%button.btn.icon-only.btn-person.btn-heart.btn-group(type="button")
+-# 								%i.ero-heart
+-# 							%button.btn.icon-only.btn-person.btn-remove.btn-group.ml-2(type="button")
+-# 								%i.ero-cross
+-# 						.person-photo-amount.d-none.d-md-flex
+-# 							%i.ero-photo-amount
+-# 							%span.amount 6
+-# 						.locker
+-# 							%i.ero-locker
+-# 						= image_tag 'girl.jpg'
+
+-# 					.person-info.ea-flex.ea-flex-align-start.ea-just-start
+-# 						.person-status.offline
+-# 						.person-details
+-# 							.person-name-age
+-# 								%h5.mt-0.mb-0.d-inline-block.person-name
+-# 									%span Anna
+-# 									%span.coma.d-none.d-md-inline-block ,
+-# 								%h5.mt-0.mb-0.person-age.text-gray 24
+-# 							.preson-city.text-gray.d-none.d-md-block
+-# 								Warszawa
+
+-# 			.col-6.col-md-4.col-lg-4.col-xl-3
+-# 				.person
+-# 					.person-photo-wrapper
+-# 						.person-actions
+-# 							%button.btn.icon-only.btn-person.btn-heart.btn-group(type="button")
+-# 								%i.ero-heart
+-# 							%button.btn.icon-only.btn-person.btn-remove.btn-group.ml-2(type="button")
+-# 								%i.ero-cross
+-# 						.person-photo-amount.d-none.d-md-flex
+-# 							%i.ero-photo-amount
+-# 							%span.amount 6
+-# 						.locker
+-# 							%i.ero-locker
+-# 						= image_tag 'girl.jpg'
+
+-# 					.person-info.ea-flex.ea-flex-align-start.ea-just-start
+-# 						.person-status.away
+-# 						.person-details
+-# 							.person-name-age
+-# 								%h5.mt-0.mb-0.d-inline-block.person-name
+-# 									%span Anna
+-# 									%span.coma.d-none.d-md-inline-block ,
+-# 								%h5.mt-0.mb-0.person-age.text-gray 24
+-# 							.preson-city.text-gray.d-none.d-md-block
+-# 								Warszawa
+
+-# 			.col-6.col-md-4.col-lg-4.col-xl-3
+-# 				.person
+-# 					.person-photo-wrapper
+-# 						.person-actions
+-# 							%button.btn.icon-only.btn-person.btn-heart.btn-group(type="button")
+-# 								%i.ero-heart
+-# 							%button.btn.icon-only.btn-person.btn-remove.btn-group.ml-2(type="button")
+-# 								%i.ero-cross
+-# 						.person-photo-amount.d-none.d-md-flex
+-# 							%i.ero-photo-amount
+-# 							%span.amount 6
+-# 						.locker
+-# 							%i.ero-locker
+-# 						= image_tag 'girl.jpg'
+
+-# 					.person-info.ea-flex.ea-flex-align-start.ea-just-start
+-# 						.person-status.away
+-# 						.person-details
+-# 							.person-name-age
+-# 								%h5.mt-0.mb-0.d-inline-block.person-name
+-# 									%span Anna
+-# 									%span.coma.d-none.d-md-inline-block ,
+-# 								%h5.mt-0.mb-0.person-age.text-gray 24
+-# 							.preson-city.text-gray.d-none.d-md-block
+-# 								Warszawa
+
+-# 		%nav.mt-5(aria-label="...")
+-# 			%ul.pagination.justify-content-between
+-# 				%li.page-item.previous.disabled
+-# 					%a.page-link(href="#" tabindex="-1")
+-# 						%i.ero-arrow-left.mr-3
+-# 						%span.d-none.d-md-inline-block Poprzednia strona
+
+-# 				.page-wrapper
+-# 					%li.page-item.active
+-# 						%a.page-link(href="") 1
+-# 					%li.page-item
+-# 						%a.page-link(href="") 2
+-# 					%li.page-item
+-# 						%a.page-link(href="") 3
+-# 					%li.page-item
+-# 						%a.page-link(href="") 4
+-# 					%li.page-item
+-# 						%a.page-link(href="") 5
+
+-# 				%li.page-item.next
+-# 					%a.page-link(href="")
+-# 						%span.d-none.d-md-inline-block Następna strona
+-# 						%i.ero-arrow-right.ml-3
+
+-# 		.featured.featured-large.streach-me.mt-5
+-# 			.patch
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+-# 			.img-wrapper
+-# 				= link_to image_tag 'girl.jpg'
+
+-# 		.footer.streach-me.d-none.d-xl-block
+-# 			.patch
+-# 			.row.no-gutters
+-# 				.col
+-# 					.footer-stats-wrapper
+-# 						.footer-stats
+-# 							.name Użytkowników
+-# 							.number 2 335 542
+-# 				.col
+-# 					.footer-stats-wrapper
+-# 						.footer-stats
+-# 							.name Zweryfikowanych
+-# 							.number 2 115 542
+-# 				.col
+-# 					.footer-stats-wrapper
+-# 						.footer-stats
+-# 							.name Online
+-# 							.number 15 123
+-# 				.col
+-# 					.footer-stats-wrapper
+-# 						.footer-stats
+-# 							.name Ukrytych
+-# 							.number 75 123
+-# 				.col
+-# 					.footer-stats-wrapper
+-# 						.footer-stats
+-# 							.name Przejazów
+-# 							.number 92 123
+
+-# 		.footer-info.d-lg-none
+-# 			.footer-info-text
+-# 				.text-book.text-center Copyright 2017 © Erotrip.pl Wszystkie prawa zastrzeżone
+-# 				.ea-flex.ea-just-center
+-# 					%button.btn.btn-link.text-gray(type="button") Kontakt
+-# 					%button.btn.btn-link.text-gray(type="button") Regulamin
+

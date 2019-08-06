@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  context_id: 1
+  context_type: MyString
+  last_message_id: 1
+
+two:
+  context_id: 1
+  context_type: MyString
+  last_message_id: 1
